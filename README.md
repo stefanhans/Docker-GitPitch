@@ -1,3 +1,23 @@
+# How I use it
+
+Start the server:
+
+```docker run -d --rm --name gitpitch -e GP_GITHUB_AS_DEFAULT=true -p 80:9000 gcr.io/hybrid-cloud-22365/gitpitch```
+
+Get public presentations:
+
+e.g. from ```https://github.com/stefanhansatos/gcp-serverless-devops-showcase```
+
+```http://localhost/stefanhansatos/gcp-serverless-devops-showcase#/```
+
+Stop the server:
+
+```docker kill gitpitch```
+
+
+... now the forked part:
+
+
 # GitPitch Container
 
 > This is an unofficial Docker container for the open-source GitPitch server. GitPitch itself now offers [GitPitch Enterprise](https://gitpitch.com/pricing), the official Docker container for GitPitch which runs the same enhanced server that runs on [gitpitch.com](https://gitpitch.com).
